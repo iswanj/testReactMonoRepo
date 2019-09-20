@@ -1,5 +1,5 @@
 const config = () => ({
-    name: "Mono Repo config example"
+    name: "Mono Repo config import"
 });
 
 export default config();

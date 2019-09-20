@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, {Fragment} from 'react';
+import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -26,10 +26,10 @@ import {
 
 import config from 'configs';
 
-const App = () => {
+const App: () => React$Node = () => {
   console.log('config>>>>>>>', config);
   return (
-    <Fragment>
+    <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -49,7 +49,7 @@ const App = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </Fragment>
+    </>
   );
 };
 
