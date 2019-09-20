@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import config from 'components/src/config';
+import config from "configs";
 
 function App() {
   return (

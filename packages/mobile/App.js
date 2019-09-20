@@ -24,7 +24,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import config from 'components/src/config';
+import config from 'configs';
 
 const App = () => {
   console.log('config>>>>>>>', config);
