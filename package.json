@@ -1,6 +1,11 @@
 {
     "name": "test-react-mono-repo",
     "private": true,
+    "scripts": {
+        "mobile:start": "react-native start",
+        "android:dev": "yarn workspace mobile android",
+        "web:dev": "yarn workspace web start"
+    },
     "workspaces": {
         "packages": [
             "packages/*"
@@ -8,6 +13,8 @@
         "nohoist": []
     },
     "dependencies": {
-        "react-native": "0.60.5"
+        "react-native": "0.60.5",
+        "react-dom": "^16.9.0",
+        "react-scripts": "3.1.2"
     }
 }

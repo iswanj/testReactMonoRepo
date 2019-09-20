@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "prestart": "npm run compile",
     "start": "concurrently \"npm run compile -- -w\" \"react-native start\"",
+    "start:mobile": "react-native start",
     "studio": "studio android",
     "test": "jest",
     "xcode": "open ios/myprojectname.xcworkspace"

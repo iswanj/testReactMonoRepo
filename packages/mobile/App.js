@@ -24,7 +24,10 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import config from 'components/src/config';
+
 const App = () => {
+  console.log('config>>>>>>>', config);
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
@@ -40,7 +43,7 @@ const App = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Mono-Repo</Text>
+              <Text style={styles.sectionTitle}>{config.name}</Text>
             </View>
             <LearnMoreLinks />
           </View>
